@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+   
+    <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Lora:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Josefin+Sans&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Josefin+Sans&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+			
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div id="branding">
+        <h1 style="color:#9aff40">Le Palais</h1><h1 style="color:#ff4a2b">Des Princes</h1>
+        </div>
+        
+        
+  
+				<button class="menu-toggle">
+  <span class="menu-icon"><span class="material-symbols-outlined">
+menu_open
+</span></span>
+</button>
+    <ul class="menu">
+        
+            
+       
+        
+            
+  <li><a href="index.html"><span class="material-symbols-outlined">
+home
+</span>Page d'accueil</a></li>
+  
+  <hr>
+  
+				<li><a href="reservez.html"><span class="material-symbols-outlined">
+conditions
+</span>Réservez un évènement</a></li>
+				
+				<hr>
+				
+				
+				
+				
+				<li><a href="contact.html"><span class="material-symbols-outlined">
+contact_support
+</span>Contactez nous 24h/24</a></li>
+				<hr>
+				
+</ul>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', function() {
+  menu.classList.toggle('open');
+});
+
+
+</script>
+
+				
+			</ul>
+		
+    </div>
+    </header>
+    <div>
+        <h3>Venez des maintenant reserver en avance sur notre site web officiel simplement et rapidement !</h3>
+    </div>
+    <form>
+    <div class="dark">
+    <section class="contact-form">
+  <h2 style="color:#ff5540">Informations sur votre réservation </h2>
+  	<form action="confirmation.html" method="post">
+    <div class="form-group">
+      <label for="email" style="color:#1538ff">Email</label>
+      <input type="email" id="email" name="email" class="form-input" required placeholder="Ex: example@gmail.com">
+    </div>
+    <div class="form-group">
+      <label for="phone" style="color:#2bc0ff">Numéro de téléphone avec indicatif</label>
+      <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Ex: +229 96383877">
+    </div>
+    <div class="form-group">
+      <label for="firstname" style="color:#40ff8c">Prénom</label>
+      <input type="text" id="firstname" name="firstname" class="form-input" required placeholder="Ex: Bottero">
+    </div>
+    <div class="form-group">
+      <label for="lastname" style="color:#af6aff">Nom</label>
+      <input type="text" id="lastname" name="lastname" class="form-input" required placeholder=" Ex: Jean">
+    </div>
+    <div class="form-group">
+      
+      
+      <div>
+          <div>
+              <style>
+                  /* Style pour l'ombre */
+.shadow {
+  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+/* Style pour faire flotter les champs de remplissage */
+.float-input {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.float-input input[type="date"], .float-input input[type="time"] {
+  font-size: 16px;
+  padding: 5px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.float-input label {
+  font-size: 16px;
+  color: #666;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.float-input input[type="date"]:focus + label, .float-input input[type="time"]:focus + label, .float-input input[type="date"]:valid + label, .float-input input[type="time"]:valid + label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+}
+
+              </style>
+          <label style="color:#ff352b">Date :</label>
+<div class="float-input shadow">
+  <input type="date" required>
+</div>
+
+<label style="color:#2b82ff">Heure de début :</label>
+<div class="float-input shadow">
+  <input type="time" required>
+</div>
+
+<label style="color: #55ff97">Heure de fin :</label>
+<div class="float-input shadow">
+  <input type="time" required>
+</div>
+
+      </div>
+      </div>
+    </div>
+    
+    <div class="form-submit">
+      <button type="submit" value="Envoyer">Envoyer</button>
+      <script>
+		document.querySelector('form').addEventListener('submit', function() {
+			window.location.href = 'commande.html';
+		});
+	</script>
+    </div>
+    <div>
+        <link rel="stylesheet" href="opt.css">
+ <div> <label for="option1" style="color:#55ff6d">Je vous fais confiance pour la sonorisation</label>
+  <input type="radio" id="option1" name="option" value="option1" checked></div>
+  <label for="option2" style="color:#ff0034"> </label>
+  <input type="radio" id="option2" name="option" value="option2" style="color:#714626">Je viens avec mon propre DJ
+</div>
+
+<div id="input-container">
+    <style>
+        .form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #777
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #777;
+  
+    </style>
+  <label for="input-field" style="color:#55ff6d">Le nom du DJ</label>
+  <div class="float-input shadow">
+  <input type="text" id="input-field" name="input-field" placeholder="Ex: Cotonou,F8JW+PH7 ">
+  </div>
+  
+  <script>
+    const option1 = document.getElementById('option1');
+const option2 = document.getElementById('option2');
+const inputContainer = document.getElementById('input-container');
+
+option1.addEventListener('click', function() {
+  inputContainer.style.display = 'none';
+});
+
+option2.addEventListener('click', function() {
+  inputContainer.style.display = 'block';
+});
+
+</script>
+</div>
+
+    <h3 style="color:#ff5540">N'oubliez pas d'appeler le service client après avoir rempli ce formulaire</h3>
+    </form>
+</body>
+
+    <button class="theme-toggle"><span class="material-symbols-outlined">
+toggle_on
+</span></button>
+<script>
+    const themeToggle = document.querySelector('.theme-toggle');
+const body = document.querySelector('body');
+
+themeToggle.addEventListener('click', function() {
+  body.classList.toggle('dark-theme');
+  body.classList.toggle('light-theme');
+});
+
+// Ajoute un événement click
+themeToggle.addEventListener("click", function() {
+  // Change la valeur des variables de couleur
+  document.documentElement.style.setProperty("--primary-color", "#F44336");
+  document.documentElement.style.setProperty("--secondary-color", "#E0E0E0");
+});
+</script>
+</form>
+<footer>
+    <style>
+        .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+    </style>
+      <p><span class="badge-dark">Palais </span> des princes ©️ tous droits réservés, 2023</p>
+      <h3>Un repas de roi , Pour un client  Roi👑</h3>
+      
+  <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div>
+<p style="color:#6affa2">|•Website designed by Wink Dust corp•|</p>
+</div>
+<p>All rights reserved </p>
+
+    </footer>
+    
+
+</html>

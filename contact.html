@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="css/style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Lora:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Josefin+Sans&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Lora:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Josefin+Sans&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Josefin+Sans&family=Lora:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+  
+    
+    <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	
+</head>
+<header>
+    <div class="container">
+        <div id="branding">
+        <h1 style="color:#9aff40">Le Palais</h1><h1 style="color:#ff4a2b">Des Princes</h1>
+        </div>
+        
+        
+  
+				<button class="menu-toggle">
+  <span class="menu-icon"><span class="material-symbols-outlined">
+menu_open
+</span></span>
+</button>
+    <ul class="menu">
+         <li><a href="index.html"><span class="material-symbols-outlined">
+home
+</span>Page d'accueil</a></li>
+  
+  <hr>
+  
+				<li><a href="reservez.html"><span class="material-symbols-outlined">
+conditions
+</span>Réservez pour un évènement</a></li>
+				
+				<hr>
+				
+				
+				
+				
+				<li><a href="contact.html"><span class="material-symbols-outlined">
+contact_support
+</span>Contactez nous 24h/24</a></li>
+				<hr>
+				
+</ul>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', function() {
+  menu.classList.toggle('open');
+});
+
+
+</script>
+
+				
+			</ul>
+		
+    </div>
+    </header>
+
+<body>
+    <button onclick="scrollToTop()" id="scrollToTopBtn">
+   <i class="fas fa-arrow-up"></i>
+   
+   <script>
+       function scrollToTop() {
+   window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+   });
+}
+
+function scrollToBottom() {
+   window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+   });
+}
+
+   </script>
+</button>
+<h1>Vous voulez nous contacter ? C'est très simple !</h1>
+<h3>Voyez donc notre service client ouvert 24h/24 pour faire entendre votre avis ou vos reproches sur notre restaurant</h3>
+<h3>Contactez le des maintenant au </h3>
+<h3><span class="material-symbols-outlined">
+perm_contact_calendar
+</span> +229 67 54 54 98</h3>
+<h3>Ou soit venez laisser un commentaire sur notre page Facebook et YouTube</h3>
+<h3><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<div>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+</h3>
+<h3 style="color:#ff0a00">Nous vous avertirons que si c'est pour une réservation , Vous recevrez un appel en retour pour confirmer votre identité et votre inscription</h3>
+
+
+
+    
+    
+</body>
+
+<footer>
+    <hr>
+    <style>
+        .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+    </style>
+      <p><span class="badge-dark">Palais </span> des princes ©️ tous droits réservés, 2023</p>
+      
+  <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div>
+<p style="color:#6affa2">|•Website designed by Wink Dust corp•|</p>
+</div>
+<p>All rights reserved </p>
+<button class="theme-toggle"><span class="material-symbols-outlined">
+toggle_on
+</span></button>
+<script>
+    const themeToggle = document.querySelector('.theme-toggle');
+const body = document.querySelector('body');
+
+themeToggle.addEventListener('click', function() {
+  body.classList.toggle('dark-theme');
+  body.classList.toggle('light-theme');
+});
+
+</script>
+
+      
+    </footer>
+</html>
